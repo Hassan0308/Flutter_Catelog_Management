@@ -32,11 +32,11 @@ class MyApp extends StatelessWidget {
 
       ),
 
-      // home: HomePage(),
-      initialRoute: "/home",
+      home: LoginPage(),
+   //   initialRoute: "/",
       routes: 
       {
-        "/":(context) => LoginPage(),
+       // "/":(context) => LoginPage(),
         "/home":(context) => HomePage(),
       }
       ,

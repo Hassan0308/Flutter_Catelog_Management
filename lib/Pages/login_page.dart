@@ -4,8 +4,34 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-child: Center(child: Text("hi"),)
-    );
+    return
+    
+    SingleChildScrollView(
+      physics: BouncingScrollPhysics(),
+      
+
+
+   
+   child:SafeArea(
+
+      
+child: Column(
+  crossAxisAlignment: CrossAxisAlignment.center,
+  
+  children: [
+    Image.asset("asset/images/login_image.png",
+    
+    fit: BoxFit.cover,),
+
+
+
+    
+  ],
+), 
+
+
+
+
+    ));
   }
 }

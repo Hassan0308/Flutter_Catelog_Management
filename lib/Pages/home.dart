@@ -1,4 +1,6 @@
-import 'package:catelog_management/main.dart';
+// ignore_for_file: unnecessary_string_escapes
+
+
 import 'package:flutter/material.dart';
 class HomePage extends StatelessWidget {
   const HomePage({ Key? key }) : super(key: key);
@@ -11,6 +13,10 @@ class HomePage extends StatelessWidget {
         title: Text("Cetalog"),
       ),
       drawer: Drawer(),
+      body: Center(
+
+        child: Image.asset("asset/images/login_image.png"),
+      ),
   
       
       );
