@@ -1,7 +1,7 @@
 import 'package:catelog_management/Pages/home.dart';
 import 'package:catelog_management/Pages/login_page.dart';
 import 'package:flutter/material.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -29,6 +29,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         brightness: Brightness.light,
         primarySwatch: Colors.green,
+        fontFamily: GoogleFonts.lato().fontFamily
+  
 
       ),
 
@@ -36,7 +38,7 @@ class MyApp extends StatelessWidget {
    //   initialRoute: "/",
       routes: 
       {
-       // "/":(context) => LoginPage(),
+      //  "/":(context) => LoginPage(),
         "/home":(context) => HomePage(),
       }
       ,
