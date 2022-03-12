@@ -7,7 +7,7 @@ class LoginPage extends StatelessWidget {
     return
     
     SingleChildScrollView(
-      physics: BouncingScrollPhysics(),
+      // physics: BouncingScrollPhysics(),
       
 
 
