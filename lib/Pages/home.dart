@@ -7,12 +7,15 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return 
+    
+     Scaffold(
       
       appBar: AppBar(
         title: Text("Cetalog"),
       ),
-      drawer: Drawer(),
+     
+      
       body: Center(
 
         child: Image.asset("asset/images/login_image.png"),
