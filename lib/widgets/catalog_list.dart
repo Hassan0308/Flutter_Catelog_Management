@@ -7,7 +7,7 @@ class Catalog_List extends StatelessWidget {
 
   final Item item;
 
-  const Catalog_List({Key? key, required this.item}) : super(key: key);
+  const Catalog_List({Key? key, required this.item}) :super(key: key);
   
 
   @override
