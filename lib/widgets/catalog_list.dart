@@ -17,7 +17,7 @@ class Catalog_List extends StatelessWidget {
     Card(
       child: Padding(
         padding: EdgeInsets.all(16.0),
-        child: ListTile(
+        child:(Catalog_Data.product!=null && Catalog_Data.product.isNotEmpty)? ListTile(
           leading: Image.network(item.image),
           title: Text(item.name),
           subtitle: Text(item.desc),
@@ -29,6 +29,12 @@ class Catalog_List extends StatelessWidget {
           ),
           ),
           
+        ):Center(
+
+          child: CircularProgressIndicator(
+
+         
+          ),
         ),
       ),
     )
