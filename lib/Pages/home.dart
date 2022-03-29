@@ -53,15 +53,26 @@ setState(() {
       ),
      drawer: MyDrawer(),
       
-      body: ListView.builder(
+      body: GridView.builder(
+        gridDelegate:SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
+        
+        crossAxisSpacing: 4,
+        mainAxisSpacing: 16,
+        ) ,
         
         physics: BouncingScrollPhysics(),
         itemCount: Catalog_Data.product.length,
       
       itemBuilder:(context,index){
+        final Products=Catalog_Data.product[index];
 
-        return Catalog_List(
-          item: Catalog_Data.product[index],
+        return Container(
+          color: Colors.green,
+          padding: EdgeInsets.all(16),
+          child: GridTile(child: Image.network(Products.image),
+          header: Center(child: Text(Products.name)),
+          footer: Text(Products.price.toString()),
+          ),
         );
       } ,
       ),
