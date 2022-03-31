@@ -15,7 +15,7 @@ class Mytheme{
         // is not restarted.
         brightness: Brightness.light,
         primarySwatch: Colors.green,
-        fontFamily: GoogleFonts.lato().fontFamily,
+        fontFamily: GoogleFonts.poppins().fontFamily,
         appBarTheme: AppBarTheme(
 
           backgroundColor: Colors.white,
@@ -35,4 +35,9 @@ class Mytheme{
 
         brightness: Brightness.dark
       );
+
+      //color
+    static Color CreamColor=Color(0xfff5f5f5);
+        static Color DarkBlue=Color(0xff403b58);
+
 }
