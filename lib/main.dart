@@ -4,6 +4,8 @@ import 'package:catelog_management/utils/my_routes.dart';
 import 'package:catelog_management/widgets/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'Pages/detail_page.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -30,6 +32,7 @@ class MyApp extends StatelessWidget {
        "/":(context) => HomePage(),
        MyRoutes.login_route:(context) => const LoginPage(),
         MyRoutes.home_route:(context) => const HomePage(),
+     
       }
       ,
 
