@@ -1,3 +1,4 @@
+import 'package:catelog_management/Pages/cart_page.dart';
 import 'package:catelog_management/Pages/home.dart';
 import 'package:catelog_management/Pages/login_page.dart';
 import 'package:catelog_management/utils/my_routes.dart';
@@ -20,9 +21,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
 
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.system,
 
       theme: Mytheme.LightThemedata(context),
+      darkTheme: Mytheme.DarkTheme(context),
 // home: LoginPage(),
      
      initialRoute: "/",
@@ -32,6 +34,7 @@ class MyApp extends StatelessWidget {
        "/":(context) => HomePage(),
        MyRoutes.login_route:(context) => const LoginPage(),
         MyRoutes.home_route:(context) => const HomePage(),
+          MyRoutes.cart_route:(context) => const Cart_Page(),
      
       }
       ,

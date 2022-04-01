@@ -4,9 +4,11 @@
 import 'dart:convert';
 
 import 'package:catelog_management/models/catalog_items.dart';
+import 'package:catelog_management/utils/my_routes.dart';
 
 
 import 'package:catelog_management/widgets/theme.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -50,6 +52,13 @@ setState(() {
   Widget build(BuildContext context) {
   
     return Scaffold(
+      floatingActionButton: FloatingActionButton(onPressed: () {
+
+Navigator.pushNamed(context, MyRoutes.cart_route);
+
+      },
+      backgroundColor: Mytheme.DarkBlue,
+      child: Icon(CupertinoIcons.cart),),
       
    
       body: SafeArea(

@@ -23,7 +23,7 @@ class DetailPage extends StatelessWidget {
          
            "\$${product.price}".text.xl2.bold.make(),
            
-           ElevatedButton(onPressed:() {}, child: "Buy".text.make(),
+           ElevatedButton(onPressed:() {}, child: "Add To Cart".text.make(),
            style: ButtonStyle(backgroundColor: MaterialStateProperty.all(
          
          Mytheme.DarkBlue
@@ -32,7 +32,7 @@ class DetailPage extends StatelessWidget {
            shape: MaterialStateProperty.all(StadiumBorder())
            ),
            
-           ).wh(100, 50),
+           ).wh(120, 50),
          ],
          
           ).p32(),
@@ -58,7 +58,8 @@ class DetailPage extends StatelessWidget {
 
                     children: [
 product.name.text.xl3.color(Mytheme.DarkBlue).make(),
-product.desc.text.xl2.color(Colors.black).make(),
+product.desc.text.xl.make(),
+"Sanctus aliquyam sea takimata ipsum magna ipsum lorem amet et,  est magna stet sea voluptua ea dolor. Amet.".text.make().p12()
 
                     ],
                   )

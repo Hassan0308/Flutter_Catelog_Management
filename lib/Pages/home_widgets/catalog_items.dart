@@ -33,9 +33,9 @@ children: [
    alignment: MainAxisAlignment.spaceBetween,
 children: [
 
-  "\$${product.price}".text.xl2.bold.make(),
+  "\$${product.price}".text.color(Colors.black).xl2.bold.make(),
   
-  ElevatedButton(onPressed:() {}, child: "Buy".text.make(),
+  ElevatedButton(onPressed:() {}, child: "Add To Cart".text.make(),
   style: ButtonStyle(backgroundColor: MaterialStateProperty.all(
 
 Mytheme.DarkBlue
