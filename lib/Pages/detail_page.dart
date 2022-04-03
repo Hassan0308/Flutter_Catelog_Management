@@ -15,13 +15,13 @@ class DetailPage extends StatelessWidget {
        Scaffold(
          appBar: AppBar(),
          bottomNavigationBar: Container(
-           color: Mytheme.CreamColor,
+           color: context.theme.cardColor,
            child: ButtonBar(
              
             alignment: MainAxisAlignment.spaceBetween,
          children: [
          
-           "\$${product.price}".text.xl2.bold.make(),
+           "\$${product.price}".text.xl2.color(context.theme.accentColor).bold.make(),
            
            ElevatedButton(onPressed:() {}, child: "Add To Cart".text.make(),
            style: ButtonStyle(backgroundColor: MaterialStateProperty.all(

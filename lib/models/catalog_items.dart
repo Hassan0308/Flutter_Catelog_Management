@@ -42,11 +42,18 @@ image: map["image"]
 
 class Catalog_Data{
 
+  
+
 static List<Item> product=[
 
 
    
 ];
+ Item getByid(int id)=>
+  product.firstWhere((element) => element.id==id ,orElse: null);
+
+  static Item getBypos(int pos)=>
+  product[pos];
 
 
 }

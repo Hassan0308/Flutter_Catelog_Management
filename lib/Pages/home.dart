@@ -57,8 +57,9 @@ setState(() {
 Navigator.pushNamed(context, MyRoutes.cart_route);
 
       },
-      backgroundColor: Mytheme.DarkBlue,
-      child: Icon(CupertinoIcons.cart),),
+      backgroundColor: context.theme.buttonColor,
+      
+      child: Icon(CupertinoIcons.cart ,color: Colors.white,),),
       
    
       body: SafeArea(

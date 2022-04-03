@@ -22,18 +22,18 @@ child: Row(
     Hero(
       
        tag: Key(product.id.toString()),
-      child: Image.network(product.image).box.p16.color(Colors.white).rounded.make().p16()),
+      child: Image.network(product.image).box.p16.color(context.theme.canvasColor).rounded.make().p16()),
     Expanded(child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.center,
 children: [
- product.name.text.bold.color(Mytheme.DarkBlue).make(),
- product.desc.text.caption(context).make(),
+ product.name.text.bold.color(context.theme.accentColor).make(),
+ product.desc.text.caption(context).color(context.theme.accentColor).make(),
  ButtonBar(
    alignment: MainAxisAlignment.spaceBetween,
 children: [
 
-  "\$${product.price}".text.color(Colors.black).xl2.bold.make(),
+  "\$${product.price}".text.color(context.theme.accentColor).xl2.bold.make(),
   
   ElevatedButton(onPressed:() {}, child: "Add To Cart".text.make(),
   style: ButtonStyle(backgroundColor: MaterialStateProperty.all(
@@ -55,6 +55,6 @@ Mytheme.DarkBlue
 )
 
 
-    ).white.square(150).make().py16();
+    ).rounded.color(context.theme.cardColor).square(150).make().py16();
   }
 }
